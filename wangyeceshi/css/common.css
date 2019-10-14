@@ -1,0 +1,22 @@
+.index_div 
+{
+	/*position: relative;*/
+}
+.all_bottom {
+	width: 100%;
+	height: 50px;
+	background: #958FE1;
+}
+.index_nav_ul .index_nav_ul_item {
+	display: inline-block;
+	/*line-height: 100px;*/
+	margin-left: 5PX;
+	color: #000000;
+	font-size: 18PX;
+	border-bottom: 2px solid #076ce0;
+}
+.index_nav_ul_item a {
+	margin: 0 15px ;
+	line-height: 50px;
+	color: #000000;
+}

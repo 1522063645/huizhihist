@@ -1,0 +1,113 @@
+    body,ul,li{
+        margin: 0;padding: 0;
+        font: 12px normal "宋体", Arial, Helvetica, sans-serif;
+        /*list-style: none;*/
+    }
+    
+    a{
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;        
+        cursor:auto;     
+       }
+
+    #tabbox{ 
+			/*width: 1500px;*/ 
+			/*background: #007AFF;*/
+			/*margin: 0 auto;*/
+			overflow: hidden;		
+			/*background-color: white;*/
+		    max-width: 80%;
+		    height: auto;
+		    margin: 50px auto 0;
+		    z-index: 1;
+    }
+    
+    .tab_conbox{
+		/*border: 1px solid #999;*/
+	    border-top: none;
+	    float: left;
+	    padding-left: 40px;
+	    /*margin-left: 10%;*/
+	    width: 70%;
+	    height: auto;
+	    /*background: ghostwhite;*/
+    }
+        
+    .tab_con{
+        display:none;
+    }
+
+    .tabs{
+        height: 32px;
+        /*border-bottom:1px solid #999;*/
+        /*border-left: 1px solid #999;*/
+        width: 100%;
+        float: left;
+        width: 18%;
+        /*background: #00A39A;*/
+        height: auto;
+	    padding: 0 50px;
+	    background-color: white;
+    }
+    
+    .tabs li{
+        height:31px;
+        line-height:31px;
+        float:left;
+        /*border:1px solid #999;*/
+        border-left:none;
+        margin-bottom: -1px;
+        overflow: hidden;
+        position: relative;
+        margin: 10px auto;
+	    background-image: url(../images/nav-bg2.png);
+	    background-repeat: repeat-x;
+	    background-size: 100% 100%;
+	    width: 220px;
+	    height: 60px;
+		color: white;
+	    letter-spacing: 5px;
+	    font-size: 20px;
+    }
+    
+    .tabs li a {
+	    display: block;
+	    padding: 0 20px;
+	    border: 1px solid #fff;
+	    outline: none;
+	    height: 100%;
+	    /*line-height: 53px;*/
+	   vertical-align: inherit;
+	    color: white;
+	    letter-spacing: 5px;
+	    font-size: 16px;
+	    text-align: center;
+	    font-weight: bold;
+    }
+    
+    .tabs li a:hover {
+        background-image: url(../images/nav-bg1.png);
+	    background-repeat: repeat-x;
+	    background-size: 100% 100%;
+    }    
+    
+    .tabs .thistab{
+       	background-image: url(../images/nav-bg1.png);
+	    background-repeat: repeat-x;
+	    background-size: 100% 100%;
+        /*border-bottom: 1px solid #fff;*/
+    }
+    .tabs .thistab a:hover{
+        background-image: url(../images/nav-bg1.png);
+	    background-repeat: repeat-x;
+	    background-size: 100% 100%;
+        /*border-bottom: 1px solid #fff;*/
+    }
+
+    .tab_con {
+        padding:12px;
+        font-size: 14px; 
+        line-height:175%;
+        list-style-type: none;
+    }

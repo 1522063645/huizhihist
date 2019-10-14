@@ -1,0 +1,77 @@
+body{
+	max-width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+div.head{
+	background-color: white;
+	width: 100%;
+	height: 270px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+div.body{
+	height: 200%;
+}
+div.body img{
+	width: 100%;
+	height: 1500px;
+	z-index: -1;
+	position: absolute;
+}
+div.middle1{
+	position: relative;
+	max-width: 90%;
+	height: 50px;
+	margin: 0 auto;
+	z-index: 1;
+}
+div.middle1 ul{
+	list-style-type:square;
+	margin:0 auto;
+}
+div.middle1 span{
+	color: red;
+	letter-spacing: 4px;
+	font-size: 23px;
+	font-weight: bold;
+}
+div.middle1 hr{
+	margin: 26px 20px;
+
+}
+div.middle2{
+	background-color: white;
+	max-width: 80%;
+	height: auto;
+	margin: 50px auto 0;
+	z-index: 1;
+}
+div.middle2body{
+	max-width: 960px;
+    height: 1140px;
+    margin: 60px 77px auto 77px;
+}
+div.middle2body span{
+	color: red;
+}
+div.middle2body ul.ul1{
+	list-style-type: disc;
+	font-size: 20px;
+	letter-spacing: 4px;
+	line-height: 40px;
+	overflow: hidden;
+	padding: 50px 20px 20px 20px;
+
+}
+div.middle2body ul.ul2{
+	list-style-type: none;
+	font-size: 20px;
+	letter-spacing: 4px;
+	line-height: 40px;
+}
+div.middle2body ul p{
+	padding: 0 70px;
+	margin: 7px auto auto auto;
+}

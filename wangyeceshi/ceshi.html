@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML+jQuery+css 选项卡切换更能</title>
+<meta name="keywords" content="HTML+jQuery+css 选项卡切换更能<" />
+<meta name="description" content="HTML+jQuery+css 选项卡切换更能<" />
+
+<style type="text/css">
+    body,ul,li{
+        margin: 0;padding: 0;
+        font: 12px normal "宋体", Arial, Helvetica, sans-serif;
+        list-style: none;
+    }
+    
+    a{
+        text-decoration: none;color: #000;
+        font-size: 14px;        cursor:auto;     }
+
+    #tabbox{ 
+			width: 1500px; 
+			background: #007AFF;
+			margin: 0 auto;
+			overflow: hidden;
+    }
+    
+    .tab_conbox{
+        border: 1px solid #999;
+        border-top: none;
+        float: left;
+        width: 80%;
+        height: auto;
+        background: #07168B;
+    }
+        
+    .tab_con{
+        display:none;
+    }
+
+    .tabs{
+        height: 32px;border-bottom:1px solid #999;border-left: 1px solid #999;
+        width: 100%;
+    }
+    
+    .tabs li{
+        height:31px;line-height:31px;
+        float:left;border:1px solid #999;
+        border-left:none;
+        margin-bottom: -1px;background: #e0e0e0;
+        overflow: hidden;position: relative;
+        margin: 10px auto;
+    }
+    
+    .tabs li a {
+        display: block;padding: 0 20px;
+        border: 1px solid #fff;outline: none;
+    }
+    
+    .tabs li a:hover {
+        background: #ccc;
+    }    
+    
+    .tabs .thistab,.tabs .thistab a:hover{
+        background: #fff;border-bottom: 1px solid #fff;
+    }
+
+    .tab_con {
+        padding:12px;font-size: 14px; line-height:175%;
+    }
+</style>
+<script src="http://lib.sinaapp.com/js/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        jQuery.jqtab = function(tabtit,tabcon) {
+            $(tabcon).hide();
+            $(tabtit+" li:first").addClass("thistab").show();
+            $(tabcon+":first").show();
+        
+            $(tabtit+" li").click(function() {
+                $(tabtit+" li").removeClass("thistab");
+                $(this).addClass("thistab");
+                $(tabcon).hide();
+                var activeTab = $(this).find("a").attr("tab");
+                $("#"+activeTab).fadeIn();
+                return false;
+            });
+            
+        };
+        /*调用方法如下：*/
+        $.jqtab("#tabs",".tab_con");
+        
+    });
+</script>
+</head>
+<body>
+    <div id="tabbox" style="">
+        <ul class="tabs" id="tabs" style="float: left;width: 10%;background: #00A39A;height: auto;">
+           <li><a tab="tab1">选项卡1</a></li>
+           <li><a tab="tab2">选项卡2</a></li>
+           <li><a tab="tab3">选项卡3</a></li>
+           <li><a tab="tab4">选项卡4</a></li>
+        </ul>
+        
+        <ul class="tab_conbox" style="">
+            <li id="tab1" class="tab_con">
+               <p>AAAAA</P>
+               <p>111111111111111111111111111111111111111111111111111111</p>
+            </li>
+                
+            <li id="tab2" class="tab_con">
+               <p>BBBBB</P>
+               <p>辽宁抚顺新宾</p>
+            </li>
+        
+            <li id="tab3" class="tab_con">
+               <p>Hello world ！</P>
+               <p>333333333333333333333333333333333333333333333333</p>
+            </li>
+        
+            <li id="tab4" class="tab_con">
+               <p>CCCCCCCC</P>
+               <p>44444444444444444444444444444444444</p></li>
+        </ul>      
+    </div>
+</body>
+</html>

@@ -25,6 +25,7 @@ body {
 	/*background: url(../images/蓝色渐变.jpg) repeat-x;*/
 	/*background-color: #eaeaea;*/
 	background: linear-gradient(rgb(227, 244, 255),rgb(255, 255, 255),rgb(227, 244, 255));
+	min-width: 1263px;
 }
 .wrapper {
 	width: 999px;

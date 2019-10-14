@@ -15,13 +15,16 @@
 	<link rel="stylesheet" type="text/css" href="css/active.css"/>
 	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
+
 	    $(document).ready(function() {
 	        jQuery.jqtab = function(tabtit,tabcon) {
+	        	console.log("这是："+tabtit+"and"+tabcon);
 	            $(tabcon).hide();
 	            $(tabtit+" li:first").addClass("thistab").show();
 	            $(tabcon+":first").show();
 	        
 	            $(tabtit+" li").click(function() {
+//	            	alert(tabcon);
 	                $(tabtit+" li").removeClass("thistab");
 	                $(this).addClass("thistab");
 	                $(tabcon).hide();
@@ -33,6 +36,10 @@
 	        };
 	        /*调用方法如下：*/
 	        $.jqtab("#tabs",".tab_con");
+	  		  let value = location.search.split("=")[1];
+				if(value >=1 && value <=6){
+					$("#tab2"+value).click();
+				}
 	        
 	    });
 	</script>
@@ -48,10 +55,10 @@
 				</div>-->
 				<div class="list fr">
 					<ul>
-						<li><a href="index.html" class="shouyey">首页</a></li>
+						<li><a href="index.html" >首页</a></li>
 						<li><a href="activityProfile.html">活动概况</a></li>
 						<li><a href="activityContent.html">活动内容</a></li>
-						<li><a href="activityProcess.html">活动流程</a></li>
+						<li><a href="activityProcess.html" class="shouyey">活动流程</a></li>
 					</ul>
 				</div>
 			</div>
@@ -64,7 +71,7 @@
 	  				第五届信息技术文化节
 	  					</p>
 	  					<p class="ani img03 " swiper-animate-effect=" fadeInDownBig" swiper-animate-duration="2s">
-	  				We only make valuable Internet products.
+	  				Fifth Information Technology Culture Festival
 	  					</p>
 					</div>
 				</div>
@@ -72,10 +79,12 @@
 	
 					<div class="con">
 						<p class="ani img02" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s">
-	  				<!--拥抱大数据-->
+	  					<!--拥抱大数据-->
+	  					开启智能时代
 	  					</p>
 	  					<p class="ani img03 " swiper-animate-effect=" fadeInDownBig" swiper-animate-duration="1s">
-	  				<!--App Custom Development Service Providers in Various Industries-->
+	  						<!--App Custom Development Service Providers in Various Industries-->
+	  					享受智慧生活
 	  					</p>
 					</div>
 				</div>
@@ -84,10 +93,10 @@
 	
 					<div class="con">
 						<p class="ani img02" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s">
-	  				共享新时代
+	  						拥抱大数据
 	  					</p>
 	  					<p class="ani img03 " swiper-animate-effect=" fadeInDownBig" swiper-animate-duration="1s">
-	  				Software System Development Service Provider
+	  						共享新时代
 	  					</p>
 					</div>
 				</div>	
@@ -111,13 +120,13 @@
 		<!--<div class="all-content" style="width:1050px;height:555px;margin: 0 auto;margin-top: 10px; background: #e4e4e4;"></div>-->
 	    <div id="tabbox" style="">
 	        <ul class="tabs" id="tabs" style="">
-		        <li><a tab="tab1">开幕式</a></li>
-		        <li><a tab="tab2">图片展览</a></li>
-		        <li><a tab="tab3">义务维修计算机</a></li>
-		        <li><a tab="tab4">信息技术系列报告</a></li>
-		        <li><a tab="tab5">校友论坛</a></li>
-		        <li><a tab="tab6" style="word-break: break-all;line-height: 25px;">创意创新与就业大赛</a></li>
-				<li><a tab="tab7">闭幕式</a></li>
+		        <li id="tab21"><a tab="tab1">开幕式</a></li>
+		        <li id="tab22"><a tab="tab2">图片展览</a></li>
+		        <li id="tab23"><a tab="tab3">义务维修计算机</a></li>
+		        <li id="tab24"><a tab="tab4">信息技术系列报告</a></li>
+		        <li id="tab25"><a tab="tab5">校友论坛</a></li>
+		        <li id="tab26"><a tab="tab6" style="word-break: break-all;line-height: 25px;">创意创新与就业大赛</a></li>
+				<li id="tab27"><a tab="tab7">闭幕式</a></li>
 	        </ul>
 	        
 	        <ul class="tab_conbox" style="">

@@ -21,6 +21,10 @@ body {
 	height: 50px;
 
 }
+.index_activity_content_div a{
+	color: red;
+	font-size: 20px;
+}
 .all-item {
 	/*background: url(../images/蓝色渐变.jpg) repeat-x;*/
 	/*background-color: #eaeaea;*/

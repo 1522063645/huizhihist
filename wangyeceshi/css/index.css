@@ -24,6 +24,7 @@ body {
 .index_activity_content_div a{
 	color: red;
 	font-size: 20px;
+	cursor: pointer;
 }
 .all-item {
 	/*background: url(../images/蓝色渐变.jpg) repeat-x;*/
